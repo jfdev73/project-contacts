@@ -1,1 +1,21 @@
-<h1>Home page</h1>
+<form action="/new" method="post">
+  <input type="text" name="fullname" placeholder="Write your fullname">
+  <input type="text" name="email" placeholder="Write your email">
+  <input type="text" name="phone" placeholder="Write your phone">
+
+  <button>save</button>
+
+</form>
+<br>
+<div class="div">
+  {% for contact in contacts%}
+
+  <div>
+    <h5>{{contact.fullname}} </h5>
+    <p> {{contact.email }}</p>
+    <p> {{contact.phone}}</p>
+  </div>
+
+  {% endfor %}
+
+</div>
