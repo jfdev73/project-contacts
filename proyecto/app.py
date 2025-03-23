@@ -11,9 +11,11 @@ from utils.db import db
 
 app = Flask(__name__)
 
+app.secret_key = "secret key"
+
 
 app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "postgresql+psycopg2://postgres:1234@localhost:5432/contactsdb"
+    "postgresql+psycopg2://postgres:1234@localhost:5433/contactsdb"
 )
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
