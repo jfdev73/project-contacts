@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<h1>Editando COntact</h1>
+
+<form action="/update" method="post">
+  <input type="hidden" name="id" value="{{contact.id}}">
+    <input type="text" name="fullname" placeholder="Write your fullname" value="{{contact.fullname}}">
+    <input type="text" name="email" placeholder="Write your email" value="{{contact.email}}">
+    <input type="text" name="phone" placeholder="Write your phone" value="{{contact.phone}}">
+
+    <button>save</button>
+
+</form>
+
+</body>
+</html>
